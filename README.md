@@ -12,7 +12,7 @@ Centos7 X86_64 | Apache 2.4.6 | PHP 5.4.16 | WHMCS 6.2.0
 ps：以下是原作者QQ 550014614 。我已经忘了是从哪里下载到的这个卡密充值，由于代码不是很完善所以自己修改了一下顺便发到github。
 
 ##文件结构
-/kami.sql    mysql数据库备份文件
+/kami.sql &nbsp; mysql数据库备份文件
 
 /whmcs/kami.php
 
