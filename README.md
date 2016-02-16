@@ -35,7 +35,16 @@ ps：以下是原作者QQ 550014614 。我已经忘了是从哪里下载到的�
 
 /whmcs/templates/six/* 放入你正在使用的模板目录内，这里的目录以whmcs6.X的默认模板”six“为例。
 
+
+##使用方法
+管理员访问 http://yourwhmcs/kami_get.php 输入生成数量、金额、数据库用户名、数据库密码进行卡密生成（这份文件仅在生成卡密时用到，平时可以删除或改为000权限来保证安全性）。
+
+用户访问 http://yourwhmcs/kami.php 输入卡密进行充值，根据各种情况（未登录、已登录、充值失败、充值成功）会返回各种提示。
+
 ##继续开发注意事项
 以下是whmcs页面和模板开发帮助文档，继续开发前请务必阅读
 
 [http://docs.whmcs.com/Creating_Pages](http://docs.whmcs.com/Creating_Pages)
+
+[http://docs.whmcs.com/Template_Syntax](http://docs.whmcs.com/Template_Syntax)
+
