@@ -34,3 +34,8 @@ ps：以下是原作者QQ 550014614 。我已经忘了是从哪里下载到的�
 /whmcs/* 部署至你的whmcs根目录，注意给予正确权限。
 
 /whmcs/templates/six/* 放入你正在使用的模板目录内，这里的目录以whmcs6.X的默认模板”six“为例。
+
+##继续开发注意事项
+以下是whmcs页面和模板开发帮助文档，继续开发前请务必阅读
+
+[http://docs.whmcs.com/Creating_Pages](http://docs.whmcs.com/Creating_Pages)
