@@ -20,10 +20,6 @@
   </p>
 </form>
 <?php
- /*                     Version1.0                          */
- /*             By Liuwenjie QQ 550014614                   */
- /* If you find bugs.Please send email to 5550014614@qq.com */
-
 $username=$_POST["username"];
 $password=$_POST["password"];
 mysql_connect("100.98.146.94",$username,$password);
@@ -46,3 +42,4 @@ for ($i=1;$i<=$sl;$i++){
 	$kami1="";
 	}
 }
+?>
