@@ -54,4 +54,4 @@ ps：以下是原作者QQ 550014614 。我已经忘了是从哪里下载到的�
 
 [http://docs.whmcs.com/Template_Syntax](http://docs.whmcs.com/Template_Syntax)
 
-[LICENSE](https://github.com/czp3009/whmcs-page-kami/blob/master/LICENSE)
+LICENSE [https://github.com/czp3009/whmcs-page-kami/blob/master/LICENSE](https://github.com/czp3009/whmcs-page-kami/blob/master/LICENSE)
