@@ -4,7 +4,7 @@ whmcs适用的简易线下卡密充值页面
 关键词：whmcs | page | kami | credit | 卡密 | 充值
 
 ##测试环境
-Centos7 X86_64 | Apache 2.4.6 | PHP 5.4.16 | MySQL 5.6 | WHMCS 6.2.0
+Centos7 X86_64 | Apache 2.4.6 | MySQL 5.6 | PHP 5.4.16 | WHMCS 6.2.0
 
 ##主要功能
 预先设定一个或若干个卡密及其对应面额。在其他销售平台上出售卡密，用户在whmcs相关页面输入线下购买的卡密后获得对应whmcs余额。完成卡密充值后即可与其他whmcs余额充值方式一样使用余额进行产品的购买和续费。
