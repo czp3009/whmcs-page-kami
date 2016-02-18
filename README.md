@@ -23,7 +23,7 @@ ps：以下是原作者QQ 550014614 。我已经忘了是从哪里下载到的�
 
 /whmcs/kami.php&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;卡密充值主页面
 
-/whmcs/kami_get.php&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;管理员快速添加卡密页
+/whmcs/kami_add.php&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;管理员快速添加卡密页
 
 /whmcs/kami_pay.php&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;卡密充值结果返回页
 
@@ -44,7 +44,7 @@ ps：以下是原作者QQ 550014614 。我已经忘了是从哪里下载到的�
 
 
 ##使用方法
-管理员首先修改文件 /whmcs/kami_get.php 中的数据库地址设置。位于第25行 mysql_connect("100.98.146.94",$username,$password); 其中的 100.98.146.94 改为自己的mysql服务器地址，本地mysql即localhost。
+管理员首先修改文件 /whmcs/kami_add.php 中的数据库设置。位于第24行和25行，包括数据库地址和database名。
 
 管理员通过浏览器访问 http://yourwhmcs/kami_get.php 输入生成数量、金额、数据库用户名、数据库密码进行卡密生成（这份文件仅在生成卡密时用到，平时可以删除或改为000权限来保证安全性）。
 
