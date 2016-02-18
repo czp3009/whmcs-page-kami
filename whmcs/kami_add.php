@@ -7,14 +7,6 @@
     <label for="value"></label>
     <input type="text" name="value" id="value" />
   </p>
-  <p>用户名：
-    <label for="username"></label>
-    <input type="text" name="username" id="username" />
-  </p>
-  <p>密码：
-    <label for="password"></label>
-    <input type="text" name="password" id="password" />
-  </p>
   <p>
     <input type="submit" name="button" id="button" value="生成" />
   </p>
@@ -23,11 +15,12 @@
 //mysql config
 $address="100.98.146.94";  //mysql host
 $database="whmcs";  //mysql database
+$username="czp";  //mysql username
+$password="88997817";  //mysql password
 
-$username=$_POST["username"];
-$password=$_POST["password"];
 mysql_connect($address,$username,$password);
 mysql_select_db($database);
+
 if ($_GET["action"]=="sc"){
 echo "Get Card Successful.<br>";
 $sl=$_POST["sl"];
