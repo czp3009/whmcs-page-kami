@@ -3,7 +3,7 @@
 $address="100.98.146.94";  //mysql host
 $database="whmcs";  //mysql database
 $username="czp";  //mysql username
-$password="88997817";  //mysql password
+$password="123456789";  //mysql password
 $separator=" ";  //choose a separator
 $column=array(  //set to true for display the column
     0=>true,  //id
