@@ -21,11 +21,13 @@ ps：以下是原作者QQ 550014614 。我已经忘了是从哪里下载到的�
 ##文件结构
 /kami.sql&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;mysql数据库备份文件
 
-/whmcs/kami.php&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;卡密充值主页面
+/whmcs/kami.php&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;用户卡密充值主页面
 
 /whmcs/kami_add.php&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;管理员快速添加卡密页
 
-/whmcs/kami_pay.php&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;卡密充值结果返回页
+/whmcs/kami_view.php&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;管理员快速查看卡密数据页（可选）
+
+/whmcs/kami_pay.php&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;用户卡密充值结果返回页
 
 /whmcs/templates/six/kami.tpl&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;卡密充值主tpl
 
@@ -44,9 +46,13 @@ ps：以下是原作者QQ 550014614 。我已经忘了是从哪里下载到的�
 
 
 ##使用方法
-管理员首先修改文件 /whmcs/kami_add.php 中的数据库设置。位于第24行和25行，包括数据库地址和database名。
+管理员首先修改文件 /whmcs/kami_add.php 中的数据库设置。从第15行开始。
 
-管理员通过浏览器访问 http://yourwhmcs/kami_add.php 输入生成数量、金额、数据库用户名、数据库密码进行卡密生成（这份文件仅在生成卡密时用到，平时可以删除或改为000权限来保证安全性）。
+管理员首先修改文件 /whmcs/kami_view.php 中的数据库设置。从第2行开始。（该文件可以不使用）
+
+管理员通过浏览器访问 http://yourwhmcs/kami_add.php 输入生成数量、金额进行卡密生成（这份文件仅在生成卡密时用到，平时可以删除或改为000权限来保证安全性）。
+
+管理员通过浏览器访问 http://yourwhmcs/kami_view.php 可以快速查看已添加的卡密。为了方便复制卡密以使用（例如复制到淘宝自动发货机器人），文件中的column数组可以自行设定以选择显示哪些column（该文件为非必须文件，平时可以删除或改为000权限来保证安全性）。
 
 用户通过浏览器访问 http://yourwhmcs/kami.php 输入卡密进行充值，根据各种情况（未登录、已登录、充值失败、充值成功）会返回各种提示。充值成功后将会增加用户余额。
 
