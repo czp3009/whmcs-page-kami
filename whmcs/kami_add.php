@@ -16,7 +16,7 @@
 $address="100.98.146.94";  //mysql host
 $database="whmcs";  //mysql database
 $username="czp";  //mysql username
-$password="88997817";  //mysql password
+$password="123456789";  //mysql password
 
 mysql_connect($address,$username,$password);
 mysql_select_db($database);
