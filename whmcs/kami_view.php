@@ -31,7 +31,7 @@ if($result)
 } 
 else
 {
-    echo "数据库连接失败</br>";
+    echo "数据库连接失败</br>"; //connect failed
 }
 
 ?>
