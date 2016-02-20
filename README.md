@@ -1,3 +1,5 @@
+简体中文
+=
 #whmcs-kami
 whmcs适用的简易线下卡密充值页面
 
@@ -58,6 +60,78 @@ ps：以下是原作者QQ 550014614 。我已经忘了是从哪里下载到的�
 
 ##继续开发注意事项
 以下是whmcs页面和模板开发帮助文档，继续开发前请务必阅读
+
+[http://docs.whmcs.com/Creating_Pages](http://docs.whmcs.com/Creating_Pages)
+
+[http://docs.whmcs.com/Template_Syntax](http://docs.whmcs.com/Template_Syntax)
+
+LICENSE
+
+[https://github.com/czp3009/whmcs-page-kami/blob/master/LICENSE](https://github.com/czp3009/whmcs-page-kami/blob/master/LICENSE)
+
+
+English
+=
+#Whmcs-kami
+Simple offline top-up card recharge page for whmcs
+
+key word：whmcs | page | kami | credit | 卡密 | 充值
+
+##Testing environment
+Centos7 X86_64 | Apache 2.4.6 | MySQL 5.6 | PHP 5.4.16 | WHMCS 6.2.0
+
+##Main function
+。Pre-set one or more top-up card key and their denomination.Sell them on other platform,after users input the key on your whmcs,users can get correspond balance of their account.After completion of recharge to balance with top-up card,users can use the balance just like recharge with other ways.
+
+Demonstration
+
+![kami](http://dl.hiczp.com/github/kami.jpg)
+
+ps：this is the first author's QQ number: 550014614 。I already forget where i downloaded this top-up card recharge page，Because the code is not perfect,i edit it by myself and release it on Github.
+
+##Download
+Please go to [RELEASE](https://github.com/czp3009/whmcs-page-kami/releases) page.
+
+##File structure
+/kami.sql&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;mysql backup file
+
+/whmcs/kami.php&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Main page of user recharge
+
+/whmcs/kami_add.php&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Key adding page for admin
+
+/whmcs/kami_view.php&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Key view page for admin（Optional）
+
+/whmcs/kami_pay.php&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Recharge result returning page for user
+
+/whmcs/templates/six/kami.tpl&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;tpl file of main page
+
+/whmcs/templates/six/kami_fail.tpl&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;tpl file of recharge failed
+
+/whmcs/templates/six/kami_success.tpl&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;tpl file of recharge succeed
+
+/whmcs/templates/six/kami_withoutlogin.tpl&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;tpl file of not login
+
+##Install
+/kami.sql Use source command to restore to your whmcs database，only one table called kami.
+
+/whmcs/* Copy to your whmcs root directory,donot forget to give correct permission.
+
+/whmcs/templates/six/* Copy to the directory which template you are using,here use whmcs6.X default template for example.
+
+
+##Usage
+Admin first edit the database setting in file /whmcs/kami_add.php 。In line 15。
+
+Admin first edit the database setting in file /whmcs/kami_view.php 。In line 2。（This file is optional）
+
+Admin use browser to access the page http://yourwhmcs/kami_add.php input number,denomination to create keys.（This file only using when create keys,you can set to 000 permission for safety）。
+
+Admin use browser to access the page http://yourwhmcs/kami_view.php ,you can view the keys already added.For comfortably using for copy（For example,copy to TaoBao auto sell robot），The column setting in the file can choose which column to display，also can set which separator to use，default is blank（This file is optional,you can set to 000 permission for safety）。
+
+Users use browser to access the page http://yourwhmcs/kami.php ,input top-up card key to recharge,According to various situations(not login,already login,recharge failed,recharge succeed),system will return various information.If recharge success,the balance of user will increase.
+
+##Continue to develop
+Here is whmcs develop docs,please read them first.
 
 [http://docs.whmcs.com/Creating_Pages](http://docs.whmcs.com/Creating_Pages)
 
