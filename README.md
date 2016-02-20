@@ -81,13 +81,13 @@ key word：whmcs | page | kami | credit | 卡密 | 充值
 Centos7 X86_64 | Apache 2.4.6 | MySQL 5.6 | PHP 5.4.16 | WHMCS 6.2.0
 
 ##Main function
-。Pre-set one or more top-up card key and their denomination.Sell them on other platform,after users input the key on your whmcs,users can get correspond balance of their account.After completion of recharge to balance with top-up card,users can use the balance just like recharge with other ways.
+Pre-set one or more top-up card key and their denomination.Sell them on other platform,after users input the key on your whmcs,users can get correspond balance of their account.After completion of recharge to balance with top-up card,users can use the balance just like recharge with other ways.
 
 Demonstration
 
 ![kami](http://dl.hiczp.com/github/kami.jpg)
 
-ps：this is the first author's QQ number: 550014614 。I already forget where i downloaded this top-up card recharge page，Because the code is not perfect,i edit it by myself and release it on Github.
+ps：this is the first author's QQ(A kind of IM softwares used in china) number: 550014614 。I already forget where i downloaded this top-up card recharge page，Because the code is not perfect,i edit it by myself and release it on Github.
 
 ##Download
 Please go to [RELEASE](https://github.com/czp3009/whmcs-page-kami/releases) page.
