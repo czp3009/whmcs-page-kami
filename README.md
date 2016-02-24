@@ -120,13 +120,13 @@ Please go to [RELEASE](https://github.com/czp3009/whmcs-page-kami/releases) page
 
 
 ##Usage
-Admin first edit the database setting in file /whmcs/kami_add.php 。In line 15。
+Admin first edit the database setting in file /whmcs/kami_add.php  . In line 15.
 
-Admin first edit the database setting in file /whmcs/kami_view.php 。In line 2。（This file is optional）
+Admin first edit the database setting in file /whmcs/kami_view.php  . In line 2. （This file is optional）
 
-Admin use browser to access the page http://yourwhmcs/kami_add.php input number,denomination to create keys.（This file only using when create keys,you can set to 000 permission for safety）。
+Admin use browser to access the page http://yourwhmcs/kami_add.php input number,denomination to create keys.（This file only using when create keys,you can set to 000 permission for safety）.
 
-Admin use browser to access the page http://yourwhmcs/kami_view.php ,you can view the keys already added.For comfortably using for copy（For example,copy to TaoBao auto sell robot），The column setting in the file can choose which column to display，also can set which separator to use，default is blank（This file is optional,you can set to 000 permission for safety）。
+Admin use browser to access the page http://yourwhmcs/kami_view.php ,you can view the keys already added.For comfortably using for copy（For example,copy to TaoBao auto sell robot），The column setting in the file can choose which column to display，also can set which separator to use，default is blank（This file is optional,you can set to 000 permission for safety）.
 
 Users use browser to access the page http://yourwhmcs/kami.php ,input top-up card key to recharge,According to various situations(not login,already login,recharge failed,recharge succeed),system will return various information.If recharge success,the balance of user will increase.
 
