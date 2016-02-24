@@ -131,7 +131,7 @@ Admin use browser to access the page http://yourwhmcs/kami_view.php ,you can vie
 Users use browser to access the page http://yourwhmcs/kami.php ,input top-up card key to recharge,According to various situations(not login,already login,recharge failed,recharge succeed),system will return various information.If recharge success,the balance of user will increase.
 
 ##Continue develop
-Here is whmcs develop docs,please read them first.
+Here is whmcs development docs,please read them first.
 
 [http://docs.whmcs.com/Creating_Pages](http://docs.whmcs.com/Creating_Pages)
 
