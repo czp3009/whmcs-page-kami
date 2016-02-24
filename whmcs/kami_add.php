@@ -1,14 +1,14 @@
 <form id="form1" name="form1" method="post" action="kami_add.php?action=sc">
-  <p>生成数量：
+  <p>生成数量：<!-- amount -->
     <label for="sl"></label>
     <input type="text" name="sl" id="sl" />
   </p>
-  <p>每张卡密金额：
+  <p>每张卡密金额： <!-- value -->
     <label for="value"></label>
     <input type="text" name="value" id="value" />
   </p>
   <p>
-    <input type="submit" name="button" id="button" value="生成" />
+    <input type="submit" name="button" id="button" value="生成" /> <!-- create -->
   </p>
 </form>
 <?php
