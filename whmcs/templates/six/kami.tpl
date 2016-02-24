@@ -8,7 +8,7 @@
   <p>卡密: <!-- key -->
     <label for="card"></label>
     <input type="text" name="card" id="card" /> 
-  （可直接粘贴）<!-- can be paste -->
+  （可直接粘贴）<!-- can be pasted -->
   </p>
   <p><input type="submit" name="button" id="button" value="充值" /></p>
 </form>
