@@ -9,10 +9,10 @@ require("init.php");
 
 $ca = new WHMCS_ClientArea();
 
-$ca->setPageTitle("卡密充值系统");
+$ca->setPageTitle("卡密充值系统");  //top-up card recharge system
 
 $ca->addToBreadCrumb('index.php', Lang::trans('globalsystemname'));
-$ca->addToBreadCrumb('mypage.php','卡密充值');
+$ca->addToBreadCrumb('mypage.php','卡密充值');  //top-up card recharge
 
 $ca->initPage();
 
